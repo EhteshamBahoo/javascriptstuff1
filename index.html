@@ -1,0 +1,30 @@
+
+<script>
+	function Generate(a)
+	{
+		
+		if(a.length >= 5)
+		{
+			document.getElementById("sp").innerHTML = "XX";
+			for(var i=2; i<a.length-2; i++)
+			{
+			document.getElementById("sp").innerHTML +=""+a[i];
+			alert(a[i]);	
+			}
+			document.getElementById("sp").innerHTML += "XX";
+		}
+		else
+		{
+			document.getElementById("sp").innerHTML = "Try Again";
+		}
+
+
+	}
+
+
+</script>
+
+
+<input type="text" id="t" name="t">
+<input type="button" value="Generate" onclick="Generate(t.value)"><br>
+<span id="sp"></span>
